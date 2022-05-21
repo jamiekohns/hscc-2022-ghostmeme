@@ -1,0 +1,22 @@
+{
+    "name": "hscc/ghostmeme",
+    "description": "2021 Ghostmeme App (redux)",
+    "type": "project",
+    "require": {
+        "bcosca/fatfree-core": "^3.8",
+        "guzzlehttp/guzzle": "^7.4",
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "Jamie Kohns",
+            "email": "jamiekohns@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Crypto\\": "src/"
+        }
+    }
+}
