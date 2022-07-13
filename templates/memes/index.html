@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <include href="templates/head.html"></include>
+    </head>
+    <bod>
+        <h3>My Feed</h3>
+        
+        <repeat group="{{ @memes }}" value="{{ @meme }}">
+            <div class="card">
+                <div class="card-header">
+                    <span class="likes">{{ @meme->getLikes() }}</span>
+                </div>
+                <div class="card-body">
+                    {{ @meme->getDescription() }}
+                </div>
+            </div>
+        </repeat>
+    </bod>
+</html>
